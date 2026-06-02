@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PitchGarden</title>
+<style>
+  :root {
+    --canvas: #F6F2E5;
+    --surface: #FFFFFF;
+    --text: #121814;
+    --text-secondary: #586259;
+    --accent: #4E7A4A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --canvas: #0E1410;
+      --surface: #1A211C;
+      --text: #F1F4EE;
+      --text-secondary: #A8B0A6;
+      --accent: #82B47C;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    background: var(--canvas);
+    color: var(--text);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 24px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 40px 0 12px;
+  }
+  p, li { font-size: 17px; color: var(--text); }
+  .muted { color: var(--text-secondary); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav { display: flex; gap: 16px; margin-top: 16px; flex-wrap: wrap; }
+  nav a {
+    padding: 10px 16px;
+    background: var(--surface);
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  .hero { padding: 80px 0 24px; }
+  .tagline { font-size: 22px; color: var(--text-secondary); margin: 0 0 32px; }
+  footer { margin-top: 80px; font-size: 13px; color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <h1>PitchGarden</h1>
+    <p class="tagline">A tuner that opens like a flower, plus a daily interval ear-trainer. Quiet, offline, on-device.</p>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </section>
+
+  <section>
+    <h2>The tuner</h2>
+    <p>
+      Open the tuner screen, play a note, and watch a small flower at the centre of the screen
+      open its petals. The closer you are to in-tune, the wider the bloom. A precise cents
+      readout sits below the flower for fine adjustment.
+    </p>
+    <h2>The ear-trainer</h2>
+    <p>
+      Each session plays ten pairs of notes. Pick the interval — minor 3rd, perfect 5th,
+      octave, the whole twelve. Mistakes come with a short reminder so you learn the shape.
+      Your accuracy is tracked per interval.
+    </p>
+    <h2>Private by design</h2>
+    <p>
+      Audio is analysed on-device using AVAudioEngine — nothing is recorded, persisted, or
+      transmitted. No account, no cloud, no analytics, no third-party SDKs.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Ilia Filiaev. PitchGarden is a music-practice app.
+  </footer>
+</div>
+</body>
+</html>

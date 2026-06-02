@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — PitchGarden</title>
+<style>
+  :root {
+    --canvas: #F6F2E5;
+    --surface: #FFFFFF;
+    --text: #121814;
+    --text-secondary: #586259;
+    --accent: #4E7A4A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --canvas: #0E1410;
+      --surface: #1A211C;
+      --text: #F1F4EE;
+      --text-secondary: #A8B0A6;
+      --accent: #82B47C;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    background: var(--canvas);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px; }
+  h1 { font-size: 36px; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 24px; }
+  h2 { font-size: 20px; font-weight: 600; margin: 32px 0 12px; }
+  p, li { font-size: 17px; }
+  a { color: var(--accent); }
+  .back { font-size: 15px; }
+  .card {
+    margin: 24px 0;
+    padding: 20px 24px;
+    background: var(--surface);
+    border-radius: 14px;
+  }
+  details {
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+  details summary { font-weight: 600; cursor: pointer; list-style: none; }
+  details summary::-webkit-details-marker { display: none; }
+  details[open] summary { margin-bottom: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="back"><a href="index.html">← PitchGarden</a></p>
+  <h1>Support</h1>
+
+  <div class="card">
+    The fastest way to reach us is email:
+    <a href="mailto:filyaevilya21@gmail.com">filyaevilya21@gmail.com</a><br>
+    We usually respond within two business days.
+  </div>
+
+  <h2>Common questions</h2>
+
+  <details>
+    <summary>The tuner isn't picking up my note. What now?</summary>
+    <p>
+      Make sure Microphone permission is allowed in Settings → PitchGarden. Then play a
+      sustained, loud-enough note close to the phone. The detector works best on
+      single, clean pitches — chords or background noise can confuse it.
+    </p>
+  </details>
+
+  <details>
+    <summary>Can I change the reference pitch to 442 Hz?</summary>
+    <p>
+      Yes. Open Settings inside the app and adjust the A4 reference between 430 and 450 Hz.
+      All cents readings and note names update accordingly.
+    </p>
+  </details>
+
+  <details>
+    <summary>The ear-trainer doesn't need the microphone?</summary>
+    <p>
+      Correct. The ear-trainer only plays tones through your speaker — it never needs to
+      hear you. If you decline microphone access, the tuner becomes unavailable but the
+      rest of the app works.
+    </p>
+  </details>
+
+  <details>
+    <summary>Nothing happens on the iOS Simulator.</summary>
+    <p>
+      The Simulator does not capture meaningful microphone audio. Use a physical iPhone
+      for the tuner. The ear-trainer plays fine in the Simulator.
+    </p>
+  </details>
+
+  <details>
+    <summary>Where is my history stored?</summary>
+    <p>
+      On your device, in SwiftData. Nothing is sent anywhere. Deleting the app removes everything.
+    </p>
+  </details>
+
+  <h2>Found a bug?</h2>
+  <p>
+    Drop us an email with: iOS version, what you were doing, and a short description of
+    what you expected and what happened. Screenshots help.
+  </p>
+</div>
+</body>
+</html>
